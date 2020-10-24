@@ -723,3 +723,424 @@ console.log(A instanceOf A);
 * 커스텀 이벤트를 만드는 방법에 대해서 설명해 주세요
 * 커스텀 이벤트는 어떨 때 주로 사용하는가?
 * 커스텀 이벤트를 만들때 사용해야하는 생성자는 무엇이며, 해당 생성자의 detail 프로퍼티는 어떤 역할을 할까요?
+
+## 3.1 마우스 이벤트
+
+* MacOS에서 Ctrl 대신 Cmd키를 사용해야 하는 이유는 무엇인가요?
+* 복사를 막기 위해서는 어떻게 해야하는가?
+* 마우스 이벤트 객체 안에는 마우스가 아닌 장치의 입력 여부도 알 수 있다(T/F)
+* `ondblclick`을 활용하여 글자 위에서 마우스 더블클릭에 대한 이벤트를 처리할 때, 더블클릭한 텍스트도 선택되는 부수효과가 일어납니다. 이를 방지하기 위해서는 어떻게 해야할까요?
+
+## 3.2 Moving the mouse: mouseover/out, mouseenter/leave
+
+* 마우스 이벤트들에 대해서 언제 발생하는지 설명해주세요
+* mouseenter/mouseleave와 mouseover/mouseout의 차이점 두가지
+* mouseover/out 그리고 mouseenter/leave 이벤트 간의 차이점을 버블링과 연관지어 설명해주세요
+* mouse over/out과 mouseenter/leave의 차이는?
+
+## 3.3 Drag'n'Drop with mouse events
+
+* Drag n Drop으로 순서를 정렬하는 프로그램을 작성해보세요
+* Drang'n'Drop의 플로우를 설명하라
+* 드래그앤드롭 알고리즘의 이벤트 흐름을 설명해주세요
+* 드래그앤드랍을 구현하는 알고리즘을 설명해주세요.
+
+## 3.4 Pointer events
+
+* mouse event대신 point event를 써야하는 이유는 무엇인가요?
+* 포인터 이벤트의 프로퍼티는 무엇이 있는가?
+* 마우스 이벤트에는 없는 포인터 이벤트의 추가 기능은?
+* 포인터 이벤트가 나오게된 배경은? (왜 마우스이벤트가 아니라 포인터이벤트를 사용해야하나요?)
+
+## 3.5 Keyboard: keydown and keyup
+
+* event.key와 event.code가 무엇인지 설명해주세요.
+* event.code와 event.key의 차이점
+* 키보드 이벤트가 없는 키의 예시를 들어보고 이유를 설명해주세요
+* 키보드 이벤트가 발생하지 않는 키는 무엇일까요?
+
+## 3.6 Scrolling
+
+* scroll 이벤트가 발생했을 때 event.preventDefault로 스크롤을 막을 수 없는 이유는 무엇인가요?
+* scroll을 막는 방법은?
+* onscroll 이벤트로 스크롤을 막을 수 없는 이유는?
+* 스크롤을 막기 위하여 사용해야하는 메서드는 무엇이고, 사용할 때 주의해야할 점이 있다면?
+
+## 4.1 폼 프로퍼티와 메서드
+
+* form 객체에 접근하여 각 요소들을 어떻게 탐색할 수 있는지 설명해 주세요
+* fieldset이란 무엇인가?
+* 원하는 폼이나 폼 요소를 찾기위한 프로퍼티를 예시를 들어 설명해주세요
+* form을 접근하는 방법 두 가지는?
+
+## 4.2 Focusing: focus/blur
+
+* 기본적으로 focus 할 수 없는 tag들은 무엇이 있고, focus할 수 있도록 하려면 무엇을 해야 하는지 설명해 주세요
+* tabindex란 무엇인가?
+* 현재 포커싱 되어 있는 요소를 사용하려면?
+* focus, blur는 버블링하지 않습니다. 이 문제를 해결하기 위한 두 가지 해결책은 무엇이있을까요?
+
+## 4.3 이벤트: change, input, cut, copy, paste
+
+* change 이벤트와 input 이벤트의 차이에 대해서 설명해주세요
+* change, input 이벤트의 차이
+* 클립보드에 저장된 데이터를 읽고 쓰는 이벤트는?
+* `onchange`와 `oninput` 이벤트의 차이는?
+
+## 4.4 Forms: event and method submit
+
+* submit 이벤트는 언제 발생하는지 설명해 주세요
+* submit의 두가지 방법
+* submit 이벤트의 취지에 대해 설명해주세요
+* form을 제출하는 방법 두가지는?
+
+## 5.1 DOMContentLoaded, load, beforeunload, unload 이벤트
+
+* DOMContentLoaded, load, beforeunload, unload 이벤트가 각각 언제 발생되는지 설명해 주세요
+* DOMContentLoaded, / load, / beforeunload, unload 각각 어떨 때 발생하는가?
+* HTML 문서의 생명주기에 관여하는 세가지 주요 이벤트를 설명해 주세요
+* HTML의 생명 주기에 관여하는 이벤트들이 어떤 것이 있는지 각 주기별로 나열해주세요.
+
+## 5.2 defer, async 스크립트
+
+* 페이지를 렌더링하는 것을 막지 않고 스크립트를 로딩하는 두 가지 방법을 소개하고, 차이를 설명해주세요.
+* async 스크립트가 여러개일 경우 어떤순서로 실행되는가?
+* defer, async의 공통점과 차이점을 설명해주세요
+* script를 다운받을 때, 페이지 렌더링을 막지 않기 위한 방법 두가지가 무엇이 있는지, 그 두가지가 어떤 차이가 있는지 설명해주세요.
+
+## 5.3 Resource loading: onload and onerror
+
+* 외부리소스를 참조할 경우 onerror에서 상세한 에러 메세지를 볼 수 없는 이유는 무엇인가요?
+* onload와 onerror는 각각 어떤경우인가?
+* load, error 이벤트를 가지는 리소스의 종류를 열거해보세요.
+* 외부리소스를 불러올 때, 성공적으로 불러왔는지 추적하는 메서드와 에러를 추적하는 메서드는?
+
+## 6.1 Mutation observer
+
+* MutationObserver로 어떤 일을 할 수 있는지 설명해 주세요
+* MutationObserver은 무슨 역할을 하는가?
+* Mutation observer 객체가 하는 일에 대해 설명해주세요.
+* MutationObserver는 어떤 역할을 하며 어떤 상황에서 사용하면 좋을까요?
+
+## 6.2 Selection and Range
+
+* Selection객체와 Range객체에 대해서 설명해 주세요
+* DOM node란 무엇인가
+* document에서 특정부분을 selection 할 때 사용하는 오브젝트 두가지는?
+
+## 6.3 이벤트 루프와 매크로·마이크로태스크
+
+* 이벤트 루프 알고리즘에 대해서 설명해 주세요
+* 작업 진척 상태를 보여주는 인디게이터를 어떻게 만들 수 있을까?
+* 매크로 태스크와 마이크로 태스크의 스케줄링 방법을 설명해주세요
+* 이벤트루프 알고리즘에 대해서 설명해주세요.
+
+# 파트 3
+
+## 1.1 Popups and window methods
+
+* popup이 쓸모있는 경우는 어떤 경우인지 설명해 주세요
+* 팝업의 사용 사례가 줄어든 이유와 현대에서도 쓰이는 사례와 이유를 설명 해주세요.
+* 최근에는 팝업 윈도우를 잘 사용하지 않지만, OAuth를 사용할때는 팝업을 사용합니다. 이유가 무엇일까요?
+* 팝업과 모달의 차이점이 무엇일까요
+
+## 1.2 Cross-window communication
+
+* Same Origin이라는 것은 무엇을 의미하나요?
+* same origin 식별에 대해 설명해주세요.
+* URL에서 "동일한 출처"에 해당하는 경우와 그렇지 않은 경우에 대해서 설명해주세요.
+* Same Origin이란 무엇일까요
+
+## 1.3 The clickjacking attack
+
+* clickjacking attack이란 무엇이고 어떻게 대처해야 할까요?
+* 클릭잭킹 공격에 대해 설명해주세요.
+* 클릭재킹이란 무엇인지, 이를 방지하기 위한 방법은 어떤 것이 있는지 설명해주세요.
+* 클릭재킹공격이 무엇일까요
+
+## 2.1 ArrayBuffer, binary arrays
+
+* Array에는 있지만 ArrayBuffer에는 없는 method 두 개는 무엇인가요?
+* ArrayBuffer에 대해 설명해주세요.
+* ArrayBuffer는 직접 수정하는 것이 불가능합니다. 어떻게 하면 버퍼의 내용을 읽거나 쓸 수 있을까요?
+* ArrayBuffer 데이터를 조작하려면 어떻게 해야되는가요
+
+## 2.2 텍스트 디코더와 텍스트 인코더
+
+* new TextEncoder().encode('ABC') 의 결과는 무엇일까요?
+* JS에서 텍스트 디코딩과 인코딩에 대해 설명해주세요
+* TextDecoder란 어떤 역할을 하나요?
+* 텍스트 디코더와 텍스트 인코더는 무엇인가요
+
+## 2.3 Blob
+
+* Blob이란 무엇이고 무엇으로 이루어져 있는지 설명해 주세요
+* Blob과 binary object의 차이를 설명해주세요
+* Blob의 내용을 보여주기 위하여 URL을 생성하기 위해서는 어떻게 해야할까요?
+* Blob은 무엇과 무엇으로 구성되어있나요
+
+## 2.4 File and FileReader
+
+* 파일을 읽을 때 내가 읽을 파일에 따라 어떤 method를 적절하게 사용해야 할까요?
+* File 객체와 Blob 객체의 관계를 설명해주세요.
+* FileReader는 어떤 데이터 포맷을 읽을 수 있나요?
+* FileReader 객체를 통해 무엇을 할 수 있나요?
+
+## 3.1 fetch
+
+* fetch 요청은 두 개의 부분으로 나누어져 있는데 각각 무엇인지 설명해 주세요
+* fetch가 반환하는 응답을 어떤 형식으로 변환할 수 있는지 설명해주세요
+* POST 요청의 요청 본문(body)에는 어떤 것들이 들어갈 수 있을까요?
+* fetch는 무엇인가요
+
+## 3.2 FormData
+
+* FormData를 만들 때 같은 이름으로 여러개를 만들 수 있나요? 예를들어 formData.append(name, value)를 여러번 실행하면 어떻게 되나요?
+* FormData 객체는 HTML 태그 없이도 CRUD를 지원한다(T/F)
+* FormData의 append 메서드와 set메서드의 차이는?
+* formData의 장점은 무엇인가요?
+
+## 3.3 Fetch: Download progress
+
+* 특정 파일을 다운로드 받을 때 진행사항을 표기하려면 어떻게 해야하나요?
+* fetch 메서드로 다운로드 진행 과정을 알 수 있는 과정을 설명해주세요
+* 요청에 대한 응답의 progress를 확인하기 위해서는 어떻게 해야할까요?
+* Download progress을 어떻게 구현할 수 있나요
+
+## 3.4 Fetch: Abort
+
+* Promise는 중간에 중단이라는 개념이 없는데, fetch를 어떻게 중단할 수 있을까요?
+* 비동기 작업에서 중단을 하기 위한 built-in 객체는?
+* JavaScript의 promise에는 "중단"이라는 개념이 없습니다. promise와 같이 비동기적인 태스크를 중단시키기 위해서는 어떻게 해야할까요?
+* fetch에서 AbortController를 사용하는 방법은?
+
+## 3.5 fetch와 Cross-Origin 요청
+
+* CORS 요청하는 과정을 설명해 주세요
+* simple/non-simple request를 구분하는 이유는?
+* Cross-Origin Request(크로스 오리진 요청)에서 simple 요청과 non-simple요청의 차이는?
+* CORS는 무엇인가요?
+
+## 3.6 Fetch API
+
+* Fetch API의 keepalive 옵션은 언제 사용하나요?
+* fetch API의 기능들을 생각나는대로 설명해 주세요
+* fetch API의 옵션 중, referrerPolicy 옵션은 무엇을 나타내는지 설명해주세요.
+* referrer, mode, credentials, cache, redirect, integrity, keepalive 를 간단하게 설명하시오
+
+## 3.7 URL objects
+
+* encodeURI와 encodeURIComponent 함수의 차이를 설명하고, 언제 사용해야 하는지 설명해 주세요
+* 문자열 대신 URL 오브젝트를 사용할 때의 장점은 무엇이있을까요?
+* URL 객체를 사용하는 이유와 장점은?
+
+## 3.8 XMLHttpRequest
+
+* fetch 메서드가 나왔음에도 사용되는 이유는?
+* 왜 이제는 HTTP요청을 위하여 XML을 잘 쓰지 않을까요?
+* XMLHttpRequest 보다 더 좋은 기술은 무엇이 있나요?
+
+## 3.9 Resumable file upload
+
+* 파일 업로드 일시중지/재진행 기능 원리를 설명해주세요.
+* fetch 메서드는 파일을 업로드하기는 쉽지만, 연결이 유실된 후 업로드를 재개하는 기능을 제공해주지 않습니다. 무엇을 사용하면 이 문제를 해결할 수 있을까요?
+* Resumable file upload 에서 나온 알고리즘 순서를 말해주세요
+
+## 3.10 Long polling
+
+* Long polling을 사용해 얻는 이점은 무엇인가요?
+* 어떤 경우에 롱 폴링이 적합하지 않은가요?
+* 롱폴링이란 무엇이고 어디에 사용하면 좋은가요?
+* regular polling의 어떤 점을 개선 시켜 Long Polling이 나왔나요?
+
+## 3.11 WebSocket
+
+* websocket에서 다룰 수 있는 4가지 이벤트에 대해서 설명해 주세요
+* 웹소켓에는 CORS 제약이 있다(T/F)
+* WebSocket이 무엇이고 어떤 특징을 가지고 있는지 이야기해주세요.
+* 웹 소켓이 무엇인가요
+
+## 3.12 Server Sent Events
+
+* EventSource와 Websocket은 무엇이 다른가요?
+* 서버와 연결을 유지하고 이벤트를 받기위해 사용하는 객체는?
+* WebSocket과 EventSource의 차이는 무엇일까요?
+* EventSource 객체는 수동으로 영구 연결을 설정해줘야한다. (O,X)
+
+
+## 4.1 쿠키와 document.cookie
+
+* XSRF 공격이란 무엇이고 어떻게 방어할 수 있나요?
+세션쿠키란 무엇인가요?
+
+## 4.2 localStorage와 sessionStorage
+
+* localStorage와 sessionStorage의 차이는?
+
+## 4.3 IndexedDB
+
+* localStorage와 비교했을 때 IndexedDB가 갖는 장점은?
+
+## 5.1 베지어 곡선
+
+* 베이어 곡선의 장점은?
+
+## 5.2 CSS 애니메이션
+
+* javascript과 비교했을 때 CSS로 애니메이션을 구현하는 것의 장점은?
+
+## 5.3 JavaScript animations
+
+* requestAnimationFrame의 역할은?
+
+## 6.1 궤도의 높이에서
+
+* 컴포넌트의 조건은?
+
+## 6.2 Custom elements
+
+* custom element를 등록하는 메서드는?
+
+## 6.3 Shadow DOM
+
+* Shadow DOM이란 무엇이며 언제 사용하는가?
+
+## 6.4 Template element
+
+* template 요소의 역할은 무엇이고, 사용하려면 어떻게 해야할까요?
+
+## 6.5 Shadow DOM slots, composition
+
+* custom element를 shadow DOM으로 옮겼을 때, CSS 스타일이 적용되지 않습니다. 이 문제를 어떻게 해결할까요?
+
+## 6.6 Shadow DOM styling
+
+* ShadowDOM 여부와 상관없이 CSS를 적용하고 싶은 경우 어떻게 해야할까?
+
+## 6.7 Shadow DOM and events
+
+* ShadowDOM의 경계를 넘어 이벤트가 버블링이 되도록 하기 위해서는 어떤 프로퍼티를 true로 만들어야할까?
+
+## 7.1 패턴과 플래그
+
+* 다음코드의 출력 결과는?
+
+```js
+console.log("He was, She was, We were".replace(/Was/gi, "is"));
+```
+
+
+## 7.2 문자 클래스
+
+* 다음코드의 출력 결과는?
+```js
+console.log("Hi\nHello\nBye".match(/.Bye/g));
+```
+
+## 7.3 유니코드: 'u' 플래그와 \p{...} 클래스
+
+* 다음코드의 출력 결과는?
+
+```js
+console.log("$3000 vs ₩3500000".match(/\p{Sc}/gu));
+```
+
+## 7.4 앵커: 문자열의 시작 ^과 끝 $
+
+* 다음코드의 출력 결과는?
+
+```js
+console.log(/Friday$/.test("Hello It's Friday"));
+```
+
+## 7.5 앵커 ^와 $의 여러 행 모드, 'm' 플래그
+
+* m 플래그는 언제 사용할까?
+
+## 7.6 Word boundary: \b
+
+* 다음코드의 출력 결과는?
+
+```js
+console.log("1, 23 4 53-1433".match(/\b\d\d\b/g));
+```
+
+## 7.6 Word boundary: \b
+
+
+## 7.7 Escaping, special characters
+
+* 다음코드의 출력 결과는?
+```js
+console.log("Hello *^^*".match(/\*\^\^\*/g));
+```
+
+## 7.8 Sets and ranges [...]
+
+* 다음코드의 출력 결과는?
+```js
+console.log("A1 B3 C3 F9 Z9".match(/\b[^A-C1-3][^A-C1-3]\b/g));
+```
+
+
+## 7.9 Quantifiers +, *, ? and {n}
+
+* 다음코드의 출력 결과는?
+
+```js
+console.log("1 12 123 1234 12345 123456".match(/\d{3,}/g));
+```
+
+## 7.10 Greedy and lazy quantifiers
+
+* Regular expression에서 matching mode를 greedy가 아니라 lazy로 바꾸려면 어떤 연산자를 쓰면 될까요?
+
+## 7.11 Capturing groups
+
+* replace 메서드와 정규표현식을 사용하여 "Hello Hi"를 "Hi, Hello"로 만들어주세요.
+
+## 7.12 Backreferences in pattern: \N and \k<name>
+
+* 다음 코드의 출력 결과는?
+
+```js
+console.log(`She said, "Hello, I'm Lucy", and he said, "Bye"`.match(/(['"])(.*?)\1/g));
+```
+
+## 7.13 Alternation (OR) |
+
+* 다음 코드의 출력 결과는?
+
+```js
+console.log("00:01 10:10 23:59 24:24 25:25 1:2 1:22".match(/([01]\d|2[0-3]):[0-5]\d/g));
+```
+
+## 7.14 Lookahead and lookbehind
+
+* 다음 코드의 출력 결과는?
+
+```js
+console.log("카카오택시는 10000원 우버는 $20".match(/(?<=\$)\d+|\d+(?=원)/g));
+```
+
+## 7.15 Catastrophic backtracking
+
+* 정규표현식의 역추적이란 무엇이고, 역추적을 방지하는 방법은?
+
+## 7.16 Sticky flag "y", searching at position
+
+* 다음 코드의 출력 결과는?
+
+```js
+let regexp = /\w+/y;
+regexp.lastIndex = 6;
+console.log(regexp.exec("hello hi bye"));
+```
+
+## 7.17 Methods of RegExp and String
+
+* 다음 string을 split 메서드와 정규표현식을 활용하여, [12, 34, 56, 33] array로 만들어주세요
+
+```js
+const str = "12, 34,\n56, \n 33" ;
+```
